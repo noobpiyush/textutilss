@@ -48,25 +48,9 @@ function App() {
     <>
     
       <div className="container my-3">
-      <NavBar tittle="TextUtils" aboutText="About" mode={mode} buttonText={buttonText} toggleMode={toggleMode} />
-      <Alert alert={alert}/>
+       <NavBar tittle="TextUtils" aboutText="About" mode={mode} buttonText={buttonText} toggleMode={toggleMode} />
+         <Alert alert={alert}/>
 
-      
-        {/* <BrowserRouter>
-          
-           
-            
-           
-            <Routes >
-              <Route exact path='/about' element={<About />} />
-            </Routes>
-            <Routes >
-              <Route exact path='/' element={<TextForms showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
-            </Routes>
-            <Routes >
-              <Route exact path='/home' element={<TextForms showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />} />
-            </Routes>
-        </BrowserRouter> */}
         <TextForms showAlert={showAlert} heading="Enter the text to analyze below" mode={mode} />
         </div>
       </>
